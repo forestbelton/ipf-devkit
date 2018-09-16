@@ -1,8 +1,14 @@
 @echo off
 set name=%1
+set host=https://github.com/forestbelton/libipf/releases/download/v1.01
 
 call :toupper %name%
 set uppername=%ret%
+
+if not exist %~dp0ipf.exe (
+    powershell -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; (New-Object Net.WebClient).DownloadFile('%host%/ipf.exe', '%~dp0ipf.exe')"
+    powershell -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; (New-Object Net.WebClient).DownloadFile('%host%/libipf.dll', '%~dp0libipf.dll')"
+)
 
 mkdir %name% || goto :eof
 mkdir %name%\src\addon_d.ipf\%name%

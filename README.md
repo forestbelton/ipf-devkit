@@ -1,7 +1,7 @@
 create-ipf-project
 ==================
 
-This is a scaffolding script which sets up the project structure necessary for developing a new `.ipf` application. In order to use this script, either add its location to your `PATH` environment variable or invoke it directly from its location. Both `libipf.dll` and `ipf.exe` (available [here](https://github.com/forestbelton/libipf/releases/tag/v1.01)) must be present in the same folder in order for this script to work.
+This is a scaffolding script which sets up the project structure necessary for developing a new `.ipf` application. In order to use this script, either add its location to your `PATH` environment variable or invoke it directly from its location.
 
 Packaging an `.ipf`
 ------------------
