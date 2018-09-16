@@ -26,5 +26,21 @@ done!
 Active code page: 65001
         1 file(s) copied.
 
+c:\Users\case\Desktop\test>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 7CF2-BB26
+
+ Directory of c:\Users\case\Desktop\test
+
+09/15/2018  09:06 PM    <DIR>          .
+09/15/2018  09:06 PM    <DIR>          ..
+09/15/2018  09:06 PM               140 deploy-ipf.bat
+09/15/2018  09:02 PM            51,726 ipf.exe
+09/15/2018  09:02 PM            56,850 libipf.dll
+09/15/2018  09:06 PM    <DIR>          src
+09/15/2018  09:06 PM               294 test.ipf
+               4 File(s)        109,010 bytes
+               3 Dir(s)  117,288,747,008 bytes free
+
 c:\Users\case\Desktop\test>
 ```
