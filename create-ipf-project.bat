@@ -1,6 +1,6 @@
 @echo off
 set name=%1
-set host=https://github.com/forestbelton/libipf/releases/download/v1.01
+set host=https://github.com/forestbelton/libipf/releases/download/v1.02
 
 call :toupper %name%
 set uppername=%ret%
