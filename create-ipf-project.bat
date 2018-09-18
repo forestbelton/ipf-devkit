@@ -35,9 +35,10 @@ echo ^</uiframe^>
 rem Packaging and deploy script
 (
 echo @echo off
-echo ipf %name%.ipf src
+echo set VERSION 0.0.1
+echo ipf %name%-%VERSION%.ipf src
 echo chcp 65001
-echo copy %name%.ipf "C:\\Program Files (x86)\\Steam\\steamapps\\common\TreeOfSavior\\data\\%name%​.ipf"
+echo copy %name%.ipf "C:\\Program Files (x86)\\Steam\\steamapps\\common\TreeOfSavior\\data\\%name%⸻%VERSION%.ipf"
 ) >%name%\deploy-ipf.bat
 
 echo Project `%name%' created.
