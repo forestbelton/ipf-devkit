@@ -39,7 +39,8 @@ echo set name=%name%
 echo set VERSION=0.0.1
 echo ipf %%name%%-%%VERSION%%.ipf src
 echo chcp 65001
-echo copy %%name%%-%%VERSION%%.ipf "C:\\Program Files (x86)\\Steam\\steamapps\\common\TreeOfSavior\\data\\🔨%%name%%-%%VERSION%%.ipf"
+echo del /p "C:\Program Files (x86)"\Steam\steamapps\common\TreeOfSavior\data\🔨%%name%%-*.ipf
+echo copy %%name%%-%%VERSION%%.ipf "C:\Program Files (x86)"\Steam\steamapps\common\TreeOfSavior\data\🔨%%name%%-%%VERSION%%.ipf
 ) >%name%\deploy-ipf.bat
 
 echo Project `%name%' created.
