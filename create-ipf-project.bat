@@ -20,7 +20,7 @@ rem Script template
 (
 echo %uppername% = _G["%uppername%"] or {}
 echo(
-echo function %uppername%_ON_INIT ^(addon, frame^)
+echo function %uppername%_ON_INIT^(addon, frame^)
 echo end
 ) >%name%\src\addon_d.ipf\%name%\%name%.lua
 
